@@ -1,7 +1,26 @@
 aid: tripscout
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/tripscout.png
 name: TripScout
-description: TripScout is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: TripScout is a travel media and deals company that curates flight and hotel
+  recommendations for consumers and operates a portfolio of large travel-focused social
+  brands (including the @hotel property at athotel.com). Its core product scans millions
+  of flights weekly and emails subscribers a small set of vetted deals, each paired with
+  featured, splurge, and budget hotel options plus destination context such as weather,
+  festivals, and local activities. TripScout runs a free tier (one deal per week) and a
+  premium subscription. It is a consumer-facing, email- and social-first business and does
+  not currently publish a public developer API, documentation portal, or SDKs. Backed by
+  500 Global; added to the API Evangelist network as a portfolio lead.
 url: https://raw.githubusercontent.com/api-evangelist/tripscout/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,15 +30,35 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Travel
+- Travel Deals
+- Flights
+- Hotels
+- Consumer
+- Media
+- Email
+- Social
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 common:
 - type: Website
+  url: https://tripscout.co
+- type: SignUp
+  url: https://tripscout.co/onboarding/airports
+- type: Website
+  name: '@hotel (athotel.com) brand property'
   url: https://athotel.com
+- type: DomainSecurity
+  url: security/tripscout-domain-security.yml
